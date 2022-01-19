@@ -1,0 +1,66 @@
+[
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "virgin hair bundles",
+        "friendly_name": "Virgin Hair Bundles"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "613 bundles",
+        "friendly_name": "613 Bundles"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "bundle deals",
+        "friendly_name": "Bundle Deals"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.category",
+      "fields": {
+        "name": "lace closures",
+        "friendly_name": "Lace Closures"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.category",
+      "fields": {
+        "name": "lace frontals",
+        "friendly_name": "Lace Frontals"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.category",
+      "fields": {
+        "name": "hd lace closures",
+        "friendly_name": "HD Lace Closures"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.category",
+      "fields": {
+        "name": "hd lace frontals",
+        "friendly_name": "HD Lace Frontals"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.category",
+      "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+      }
+    }
+  ]

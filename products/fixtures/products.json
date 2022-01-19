@@ -1,0 +1,276 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw5001210155",
+        "name": "Virgin Hair Deep Wave Bundle",
+        "description": "New World Stunning Virgin hair extensions are of a high quality with each selection well sourced. Our 100% virgin hair extensions are smooth, tangle free and long lasting. Can be washed, ironed and bleached with care. Blends well with all types of hair. With all hair cuticles well defined. Each bundle weighs between 95 -100g. Available in different lengths from 10 ……",
+        "price": 33.39,
+        "category": 6,
+        "rating": 4.8,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/11/Artboard-1.png"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw5009800425",
+        "name": "Virgin Hair Straight Bundle",
+        "description": "New World Stunning Virgin hair extensions are of a high quality with each selection well sourced. Our 100% virgin hair extensions are smooth, tangle free and long lasting. Can be washed, ironed and bleached with care. Blends well with all types of hair. With all hair cuticles well defined. Each bundle weighs between 95 -100g. Available in different lengths from 10 ……",
+        "price": 45.11,
+        "category": 6,
+        "rating": 4.6,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/Straight1-768x977.jpg"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw4001739910",
+        "name": "Virgin Hair Body Wave",
+        "description": "New World Stunning Virgin hair extensions are of a high quality with each selection well sourced. Our 100% virgin hair extensions are smooth, tangle free and long lasting. Can be washed, ironed and bleached with care. Blends well with all types of hair. With all hair cuticles well defined. Each bundle weighs between 95 -100g. Available in different lengths from 10 ……",
+        "price": 20.3,
+        "category": 6,
+        "rating": 4.9,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/BodywaveR-768x977.jpg"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw0001890332",
+        "name": "Virgin Hair kinky Straight Bundle",
+        "description": "New World Stunning Virgin hair extensions are of a high quality with each selection well sourced. Our 100% virgin hair extensions are smooth, tangle free and long lasting. Can be washed, ironed and bleached with care. Blends well with all types of hair. With all hair cuticles well defined. Each bundle weighs between 95 -100g. Available in different lengths from 10 ……",
+        "price": 50.85,
+        "category": 6,
+        "rating": 4,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/VirginKS-768x977.jpg"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw9008811605",
+        "name": "Virgin Hair Kinky Curly Bundle",
+        "description": "New World Stunning Virgin hair extensions are of a high quality with each selection well sourced. Our 100% virgin hair extensions are smooth, tangle free and long lasting. Can be washed, ironed and bleached with care. Blends well with all types of hair. With all hair cuticles well defined. Each bundle weighs between 95 -100g. Available in different lengths from 10 ……",
+        "price": 232.99,
+        "category": 6,
+        "rating": 5,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/VKCB-768x977.jpg"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw8765489206",
+        "name": "Virgin Hair Loose Curly Bundle",
+        "description": "New World Stunning Virgin hair extensions are of a high quality with each selection well sourced. Our 100% virgin hair extensions are smooth, tangle free and long lasting. Can be washed, ironed and bleached with care. Blends well with all types of hair. With all hair cuticles well defined. Each bundle weighs between 95 -100g. Available in different lengths from 10 ……",
+        "price": 57.99,
+        "category": 6,
+        "rating": 4.7,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/VHLCB-768x977.jpg"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw5552445111",
+        "name": "Virgin Hair Deep Curly Bundle",
+        "description": "New World Stunning Virgin hair extensions are of a high quality with each selection well sourced. Our 100% virgin hair extensions are smooth, tangle free and long lasting. Can be washed, ironed and bleached with care. Blends well with all types of hair. With all hair cuticles well defined. Each bundle weighs between 95 -100g. Available in different lengths from 10 ……",
+        "price": 55.6,
+        "category": 6,
+        "rating": 4.9,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/VHDCB-768x977.jpg"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw890266785",
+        "name": "Virgin Hair 613 Straight Bundle",
+        "description": "Have a splendid experience with our 613 Straight Hair! The New World hair extension is of a high quality with each selection well sourced. Our virgin hair is highly suitable for the Ladies who prefer to have healthy and long lasting hair. Our extensions are smooth and tangle free. Extensions blend well with all types of hair and hair cuticles are well defined. Each bundle weighs between 95 -100g. Available in different lengths ranging from 10 …",
+        "price": 76,
+        "category": 7,
+        "rating": 4.8,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/613VHSB.jpg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw9087690715",
+        "name": "Virgin Hair 613 Body Wave Bundle",
+        "description": "Have a splendid experience with our 613 Straight Hair! The New World hair extension is of a high quality with each selection well sourced. Our virgin hair is highly suitable for the Ladies who prefer to have healthy and long lasting hair. Our extensions are smooth and tangle free. Extensions blend well with all types of hair and hair cuticles are well defined. Each bundle weighs between 95 -100g. Available in different lengths ranging from 10 …",
+        "price": 99.79,
+        "category": 7,
+        "rating": 4.7,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/613BWB-768x977.jpg"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw7895438900",
+        "name": "Virgin Hair Loose kinky Bundle Deal",
+        "description": "Experience our 3 in 1 Virgin Hair Bundle Deal available in all lengths and textures. Suitable for full head. Extensions are of high quality, smooth, tangle free and long lasting.",
+        "price": 156.99,
+        "category": 8,
+        "rating": 4.4,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/VHKBD-768x977.jpg",
+        "image": "DP0418201317011949M.jpg"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw6785461055",
+        "name": "Virgin Hair Loose Curly Bundle Deal",
+        "description": "Experience our 3 in 1 Virgin Hair Bundle Deal available in all lengths and textures. Suitable for full head. Extensions are of high quality, smooth, tangle free and long lasting.",
+        "price": 148.09,
+        "category": 8,
+        "rating": 4.8,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/VHLCBD-768x977.jpg"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw5000980099",
+        "name": "Virgin Hair Straight Bundle Deal",
+        "description": "Experience our 3 in 1 Virgin Hair Bundle Deal available in all lengths and textures. Suitable for full head. Extensions are of high quality, smooth, tangle free and long lasting.",
+        "price": 148.09,
+        "category": 8,
+        "rating": 4.6,
+        "image_url": "Virgin Hair Straight Bundle Deal – Welcome To New World Store."
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw0001899332",
+        "name": "HD Straight Hair Lace Frontal",
+        "description": "Our New World Rich 13*4″ HD lace frontals are of good quality made from our virgin hair selections. Lace is very light and blends perfectly well in all skin types, almost invisible.",
+        "price": 150.85,
+        "category": 12,
+        "rating": 4.7,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/8-768x977.jpg"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw9009811605",
+        "name": "HD Lace Closure",
+        "description": "Our New World Rich HD lace closures are of good quality made from our virgin hair selections. Lace is very light and blends perfectly well in all skin types, almost invisible.",
+        "price": 132.99,
+        "category": 11,
+        "rating": 5,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/VHSC-768x977.jpg"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw8760189206",
+        "name": "Virgin Hair Straight Lace Closure",
+        "description": "Our New World Rich lace closures are of good quality made from our virgin hair selections. Laces are available to choose between Transparent and HD laces.",
+        "price": 157.99,
+        "category": 9,
+        "rating": 4.7,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/VHSC-768x977.jpg"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw5552045911",
+        "name": "Loose Wave Lace Closure",
+        "description": "Our New World Rich lace closures are of good quality made from our virgin hair selections. Laces are available to choose between Transparent and HD laces.",
+        "price": 155.6,
+        "category": 9,
+        "rating": 4.9,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/LWLC-768x977.jpg"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw898966785",
+        "name": "Deep Curly Lace Closure",
+        "description": "Our New World Rich lace closures are of good quality made from our virgin hair selections. Laces are available to choose between Transparent and HD laces.",
+        "price": 96,
+        "category": 9,
+        "rating": 4.8,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/DCLC-768x977.jpg"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw9086692715",
+        "name": "Virgin Hair Straight Lace Frontal",
+        "description": "Our New World Rich 13*4″ lace frontals are of good quality made from our virgin hair selections. Lace is very top quality and blends perfectly well in all skin types.",
+        "price": 109.79,
+        "category": 10,
+        "rating": 4.7,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/VHLF-768x977.jpg"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw7825400900",
+        "name": "613 Body Wave Lace Closure",
+        "description": "Our New World Rich lace closures are of good quality made from our virgin hair selections. Laces are available to choose between Transparent and HD laces",
+        "price": 106.99,
+        "category": 9,
+        "rating": 4.4,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/613BWLCLOSURE-768x977.jpg"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw6780061055",
+        "name": "Straight Bob Wig",
+        "description": "Latest Arrival !!! Our 13*4/13*6 Bob wigs are fleek made from our virgin hair! Wigs are 250% density much fuller than the normal wigs and can be worn just like you want glueless or with glue.",
+        "price": 180.09,
+        "category": 13,
+        "rating": 4.8,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/11/36-768x977.jpg"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+        "sku": "nw5023955099",
+        "name": "Deep Curly Frontal Wig 250% Density",
+        "description": "Latest Arrival !!! Our 13*4/13*6 Wave wigs are fleek made from our virgin hair! Wigs are 250% density and can be worn just like you want glueless or with glue.",
+        "price": 180.09,
+        "category": 13,
+        "rating": 4.6,
+        "image_url": "https://newworldsalons.store/wp-content/uploads/2021/10/LaceFW-768x977.jpg"
+      }
+    }
+  ]
