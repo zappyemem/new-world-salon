@@ -4,7 +4,7 @@ html {
 
 body {
     background: url('/media/homepic.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: contain;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
@@ -55,6 +55,8 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+
+
 
 .overlay {
 	height: 100%;
