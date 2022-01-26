@@ -17,10 +17,10 @@
                 Bundles
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="bundles-link">
-                <a href="" class="dropdown-item">Virgin Hair Bundles</a>
-                <a href="" class="dropdown-item">613 Bundles</a>
-                <a href="" class="dropdown-item">Bundles Deals</a>
-                <a href="" class="dropdown-item">All Bundles</a>
+                <a href="{% url 'products' %}?category=virgin hair bundles" class="dropdown-item">Virgin Hair Bundles</a>
+                <a href="{% url 'products' %}?category=613 bundles" class="dropdown-item">613 Bundles</a>
+                <a href="{% url 'products' %}?category=bundle deals" class="dropdown-item">Bundles Deals</a>
+                <a href="{% url 'products' %}?category=virgin hair bundles,613 bundles,bundle deals" class="dropdown-item">All Bundles</a>
             </div>
         </li>
 
@@ -29,10 +29,10 @@
                 Lace
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="lace-link">
-                <a href="" class="dropdown-item">Lace Closures</a>
-                <a href="" class="dropdown-item">Lace Frontals</a>
-                <a href="" class="dropdown-item">HD Lace Closures</a>
-                <a href="" class="dropdown-item">HD Lace Frontals</a>
+                <a href="{% url 'products' %}?category=lace closures" class="dropdown-item">Lace Closures</a>
+                <a href="{% url 'products' %}?category=lace frontals" class="dropdown-item">Lace Frontals</a>
+                <a href="{% url 'products' %}?category=hd lace closures" class="dropdown-item">HD Lace Closures</a>
+                <a href="{% url 'products' %}?category=hd lace frontals" class="dropdown-item">HD Lace Frontals</a>
             </div>
         </li>
 
@@ -41,8 +41,8 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Bundles Deals</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=bundle deals" class="dropdown-item">Bundles Deals</a>
             </div>
         </li>
     </ul>
