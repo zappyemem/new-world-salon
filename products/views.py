@@ -5,7 +5,9 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 
-from .forms import ProductForm
+from .forms import ProductForm, ReturnProduct
+
+
 
 # Create your views here.
 
@@ -135,8 +137,34 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def return_product(request):
+    """Product Return"""
+
+    if request.method == 'POST':
+        form = ReturnProduct(request.POST, request.FILES)
+        if form.is_valid():
+            form.instance.user = request.user
+            return_product = form.save()
+            messages.success(request, 'Your Product Return Notice has been received, Please Package product appropriately when Posting back to Us!')
+            return redirect(reverse('products'))
+        else:
+            messages.error(request,
+                           ('Error in Form. '
+                            'Please ensure the form is valid.'))
+    else:
+        form = ReturnProduct()
+
+    template = 'products/product_return.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
