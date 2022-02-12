@@ -69,3 +69,16 @@ class Review(models.Model):
     
     def __str__(self):
         return self.text
+
+
+# Feedback/complaint Model
+
+class ProductFeedback(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    name = models.CharField(max_length=254)
+    email = models.CharField(max_length=254)
+    subject = models.CharField(max_length=254, null=True, blank=True)
+    detail = models.TextField(max_length=750)
+
+    def __str__(self):
+        return self.name

@@ -6,7 +6,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 
-from .forms import ProductForm, ReturnProduct, ReviewForm
+from .forms import ProductForm, ReturnProduct, ReviewForm, ProductFeedbackForm
 
 
 
@@ -154,7 +154,7 @@ def return_product(request):
         if form.is_valid():
             form.instance.user = request.user
             return_product = form.save()
-            
+
             messages.success(request, 'Your Product Return Notice has been received, Please Package product appropriately when Posting back to Us!')
             return redirect(reverse('products'))
         else:
@@ -193,3 +193,27 @@ def review_product(request, product_id):
             messages.error(request, 'There is an error with your review')
 
         return redirect(redirect_url)
+
+
+def product_feedback(request):
+    """ Feedback Review"""
+
+    if request.method == 'POST':
+        form = ProductFeedbackForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.instance.user = request.user
+            product_feedback = form.save()
+            messages.success(request, 'Thank you for your Feedback/Complaint, We would get back to you with a response with 48 hours!')
+            return redirect(reverse('products'))
+        else:
+            messages.error(request, ('Error in Form. '
+             'Please ensure the form is valid.'))
+    else:
+        form = ProductFeedbackForm()
+
+    template = 'products/feedback.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
