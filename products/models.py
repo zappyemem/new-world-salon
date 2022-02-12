@@ -1,4 +1,5 @@
 from datetime import datetime
+
 from django.contrib.auth.models import User
 from django_countries.fields import CountryField
 
@@ -57,15 +58,7 @@ class ReturnProduct(models.Model):
         return self.name
 
 
-#product review model
-RATE_CHOICES = [
-    (1, '1 - Trash'),
-    (1, '2 - Manageable'),
-    (1, '3 - Satisfied'),
-    (1, '1 - Good'),
-    (1, '1 - Excellent'),
-]
-
+#product review modeL
 
 
 class Review(models.Model):
@@ -73,8 +66,6 @@ class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
     user = models.ForeignKey(User, blank=True, null=True, on_delete=models.SET_NULL)
     created_at = models.DateTimeField(default=timezone.now)
-    rate = models.PositiveSmallIntegerField(choices=RATE_CHOICES)
-
-
+    
     def __str__(self):
         return self.text

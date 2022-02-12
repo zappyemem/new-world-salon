@@ -154,6 +154,7 @@ def return_product(request):
         if form.is_valid():
             form.instance.user = request.user
             return_product = form.save()
+            
             messages.success(request, 'Your Product Return Notice has been received, Please Package product appropriately when Posting back to Us!')
             return redirect(reverse('products'))
         else:
@@ -170,7 +171,7 @@ def return_product(request):
 
     return render(request, template, context)
 
-
+@login_required
 @require_POST
 def review_product(request, product_id):
     """Review a product"""
