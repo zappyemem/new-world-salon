@@ -17,10 +17,6 @@
                 <div class="image-container my-5">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        </a>
-                        {% else %}
-                        <a href="">
                             <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
                         </a>
                     {% endif %}
@@ -30,6 +26,7 @@
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                    <p class="m-2"><a href="#reviews">{{ product.reviews.count }} reviews </a></p>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -110,7 +107,44 @@
                         </div>
                     </form>
                 </div>
-            </div>
+                <div id="reviews">
+
+                    {% if product.reviews.all %}
+                        <h6 class="m-2"><strong>REVIEWS</strong></h6>
+                        <hr/>
+                    {% endif %}
+                    
+                    {% for review in product.reviews.all %}
+                    <div class="card m-2">
+                        <div class="card-body reviewCard p-1">
+                            <h6 class="m-1"><strong>{{ review.user.username }}</strong></h6>
+                            <p class="m-1">{{ review.text }}</p>
+                        </div>
+                    </div>
+                     {% empty %}
+                    <div class="card m-3">
+                        <div class="card-body">   
+                            <p>No reviews yet</p>
+                        </div>
+                    </div>
+                        {% endfor %}  
+                    {% if request.user.is_authenticated %}         
+                    <div class="row">
+                        <div class="col-12 col-lg-12">    
+                            <form action="{% url 'review_product' product.id %}" method="POST">
+                                {%  csrf_token %}
+                                {{ review_form.text }}
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                <button class="btn btn-black m-2 rounded-0" type="submit">Add Review</button>
+                            </form>
+                        </div>
+                    </div>
+                    {% endif %}
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}

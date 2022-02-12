@@ -1,6 +1,6 @@
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import Product, Category, ReturnProduct
+from .models import Product, Category, ReturnProduct, Review, RATE_CHOICES
 
 
 
@@ -27,3 +27,13 @@ class ReturnProduct(forms.ModelForm):
     class Meta:
         model = ReturnProduct
         exclude = ('user',)
+
+
+
+class ReviewForm(forms.ModelForm):
+    text = forms.CharField(widget=forms.Textarea(attrs={'class': 'materialize-textarea'}), required=True)
+    rate = forms.ChoiceField(choices=RATE_CHOICES, widget=forms.Select(), required=True)
+
+    class Meta:
+        model = Review
+        fields = ('text', 'rate' ) 

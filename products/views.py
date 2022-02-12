@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.views.decorators.http import require_POST
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 
-from .forms import ProductForm, ReturnProduct
+from .forms import ProductForm, ReturnProduct, ReviewForm
 
 
 
@@ -168,3 +169,26 @@ def return_product(request):
     }
 
     return render(request, template, context)
+
+
+@require_POST
+def review_product(request, product_id):
+    """Review a product"""
+
+    if request.method == "POST":
+        product = get_object_or_404(Product, pk=product_id)
+        redirect_url = request.POST.get('redirect_url')
+
+        form = ReviewForm(request.POST)
+
+        if form.is_valid():
+            form.save(commit=False)
+            form.instance.user = request.user
+            form.instance.product = product
+
+            form.save()
+            messages.success(request, 'Your review has been submitted')
+        else:
+            messages.error(request, 'There is an error with your review')
+
+        return redirect(redirect_url)
