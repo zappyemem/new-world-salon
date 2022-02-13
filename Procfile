@@ -1,1 +1,1 @@
-web: gunicorn new_world_store.wsgi.application
+web: gunicorn new-world-store.wsgi.application

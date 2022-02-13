@@ -111,7 +111,7 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-WSGI_APPLICATION = 'new_world_store.wsgi.application'
+WSGI_APPLICATION = 'new-world-store.wsgi.application'
 
 
 # Database
