@@ -173,7 +173,7 @@ def return_product(request):
 
 
 @login_required
-def book_appointment(request):
+def product_feedback(request):
     """ Appointment View"""
 
     if request.method == 'POST':

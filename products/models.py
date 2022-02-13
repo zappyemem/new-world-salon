@@ -61,13 +61,12 @@ class ReturnProduct(models.Model):
 
 # Appointment Model
 
-class BookingAppointment(models.Model):
+class ProductFeedback(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=254)
     email = models.CharField(max_length=254)
     subject = models.CharField(max_length=254, null=True, blank=True)
     detail = models.TextField(max_length=750)
-    appointment_date = models.DateField(default=timezone.now)
 
 
     def __str__(self):
