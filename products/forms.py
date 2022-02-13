@@ -32,8 +32,8 @@ class ReturnProduct(forms.ModelForm):
 
 
 
-#Appointment
 class ProductFeedbackForm(forms.ModelForm):
 
     class Meta:
         model = ProductFeedback
+        exclude = ('user', )
