@@ -33,8 +33,8 @@ class ReturnProductForm(forms.ModelForm):
 
 
 #Appointment
-class BookingAppointmentForm(forms.ModelForm):
+class ProductFeedbackForm(forms.ModelForm):
 
     class Meta:
-        model = BookingAppointment()
+        model = ProductFeedback()
         exclude = ('user', )

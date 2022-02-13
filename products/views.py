@@ -6,7 +6,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 
-from .forms import ProductForm, ReturnProductForm, BookingAppointmentForm
+from .forms import ProductForm, ReturnProductForm, ProductFeedbackForm
 
 
 
@@ -177,7 +177,7 @@ def product_feedback(request):
     """ Appointment View"""
 
     if request.method == 'POST':
-        form = BookingAppointmentForm(request.POST, request.FILES)
+        form = ProductFeedbackForm(request.POST, request.FILES)
         if form.is_valid():
             form.instance.user = request.user
             appointment = form.save()
@@ -187,9 +187,9 @@ def product_feedback(request):
             messages.error(request, ('Error in Form. '
              'Please ensure the form is valid.'))
     else:
-        form = BookingAppointmentForm()
+        form = ProductFeedbackForm()
 
-    template = 'products/appointment.html'
+    template = 'products/feedback.html'
     context = {
         'form': form,
     }
