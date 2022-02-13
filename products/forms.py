@@ -23,7 +23,7 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded-0'
 
 #Product Return Form
-class ReturnProductForm(forms.ModelForm):
+class ReturnProduct(forms.ModelForm):
 
     class Meta:
         model = ReturnProduct
@@ -36,5 +36,4 @@ class ReturnProductForm(forms.ModelForm):
 class ProductFeedbackForm(forms.ModelForm):
 
     class Meta:
-        model = ProductFeedback()
-        exclude = ('user', )
+        model = ProductFeedback
