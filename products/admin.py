@@ -30,7 +30,7 @@ class ReturnProductAdmin(admin.ModelAdmin):
         )
 
 
-class BookingAppointmentAdmin(admin.ModelAdmin):
+class ProductFeedbackForm(admin.ModelAdmin):
     list_display = (
             'name',
             'subject',
@@ -42,5 +42,5 @@ class BookingAppointmentAdmin(admin.ModelAdmin):
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(ReturnProduct, ReturnProductAdmin)
-admin.site.register(BookingAppointment, BookingAppointmentAdmin)
+admin.site.register(ProductFeedback, ProductFeedbackAdmin)
 
