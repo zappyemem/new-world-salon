@@ -180,7 +180,7 @@ def product_feedback(request):
         form = ProductFeedbackForm(request.POST, request.FILES)
         if form.is_valid():
             form.instance.user = request.user
-            appointment = form.save()
+            product_feedback = form.save()
             messages.success(request, 'Thank you for your Appointment, We would get back to you with a response with 48 hours!')
             return redirect(reverse('products'))
         else:
