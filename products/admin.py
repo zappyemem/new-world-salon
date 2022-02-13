@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, ReturnProduct, BookingAppointment
+from .models import Product, Category, ReturnProduct, ProductFeedback
 
 
 # Register your models here.
