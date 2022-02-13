@@ -6,7 +6,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 
-from .forms import ProductForm, ReturnProductForm, ProductFeedbackForm
+from .forms import ProductForm, ReturnProduct, ProductFeedbackForm
 
 
 
@@ -150,7 +150,7 @@ def return_product(request):
     """Product Return"""
 
     if request.method == 'POST':
-        form = ReturnProductForm(request.POST, request.FILES)
+        form = ReturnProduct(request.POST, request.FILES)
         if form.is_valid():
             form.instance.user = request.user
             return_product = form.save()
@@ -162,7 +162,7 @@ def return_product(request):
                            ('Error in Form. '
                             'Please ensure the form is valid.'))
     else:
-        form = ReturnProductForm()
+        form = ReturnProduct()
 
     template = 'products/product_return.html'
     context = {
