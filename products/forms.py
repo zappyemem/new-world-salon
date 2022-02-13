@@ -1,6 +1,6 @@
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import Product, Category, ReturnProduct, Review, ProductFeedback
+from .models import Product, Category, ReturnProduct, BookingAppointment
 
 
 
@@ -23,25 +23,18 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded-0'
 
 #Product Return Form
-class ReturnProduct(forms.ModelForm):
+class ReturnProductForm(forms.ModelForm):
 
     class Meta:
         model = ReturnProduct
         exclude = ('user',)
 
 
-#Product Review Form
-
-class ReviewForm(forms.ModelForm):
-
-    class Meta:
-        model = Review
-        fields = ('text', ) 
 
 
-#Feedback Form
-class ProductFeedbackForm(forms.ModelForm):
+#Appointment
+class BookingAppointmentForm(forms.ModelForm):
 
     class Meta:
-        model = ProductFeedback
+        model = BookingAppointment()
         exclude = ('user', )

@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Product, Category, Review
-from .forms import ReviewForm
+from .models import Product, Category, ReturnProduct, BookingAppointment
+
 
 # Register your models here.
 
@@ -20,19 +20,27 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
+
+
+class ReturnProductAdmin(admin.ModelAdmin):
+    list_display = (
+            'name',
+            'id',
+            'return_reason',   
+        )
+
+
+class BookingAppointmentAdmin(admin.ModelAdmin):
+    list_display = (
+            'name',
+            'subject',
+            'detail',   
+        )
+
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(ReturnProduct, ReturnProductAdmin)
+admin.site.register(BookingAppointment, BookingAppointmentAdmin)
 
-
-class ReviewAdmin(admin.ModelAdmin):
-    form = ReviewForm
-    list_display = (
-        'text',
-        'product',
-        'user',
-        'created_at',
-    )
-        
-    ordering = ('created_at', )
-
-admin.site.register(Review, ReviewAdmin) 

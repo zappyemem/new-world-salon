@@ -6,7 +6,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 
-from .forms import ProductForm, ReturnProduct, ReviewForm, ProductFeedbackForm
+from .forms import ProductForm, ReturnProductForm, BookingAppointmentForm
 
 
 
@@ -150,7 +150,7 @@ def return_product(request):
     """Product Return"""
 
     if request.method == 'POST':
-        form = ReturnProduct(request.POST, request.FILES)
+        form = ReturnProductForm(request.POST, request.FILES)
         if form.is_valid():
             form.instance.user = request.user
             return_product = form.save()
@@ -162,7 +162,7 @@ def return_product(request):
                            ('Error in Form. '
                             'Please ensure the form is valid.'))
     else:
-        form = ReturnProduct()
+        form = ReturnProductForm()
 
     template = 'products/product_return.html'
     context = {
@@ -171,47 +171,25 @@ def return_product(request):
 
     return render(request, template, context)
 
+
 @login_required
-@require_POST
-def review_product(request, product_id):
-    """Review a product"""
-
-    if request.method == "POST":
-        product = get_object_or_404(Product, pk=product_id)
-        redirect_url = request.POST.get('redirect_url')
-
-        form = ReviewForm(request.POST)
-
-        if form.is_valid():
-            form.save(commit=False)
-            form.instance.user = request.user
-            form.instance.product = product
-
-            form.save()
-            messages.success(request, 'Your review has been submitted')
-        else:
-            messages.error(request, 'There is an error with your review')
-
-        return redirect(redirect_url)
-
-
-def product_feedback(request):
-    """ Feedback Review"""
+def book_appointment(request):
+    """ Appointment View"""
 
     if request.method == 'POST':
-        form = ProductFeedbackForm(request.POST, request.FILES)
+        form = BookingAppointmentForm(request.POST, request.FILES)
         if form.is_valid():
             form.instance.user = request.user
-            product_feedback = form.save()
-            messages.success(request, 'Thank you for your Feedback/Complaint, We would get back to you with a response with 48 hours!')
+            appointment = form.save()
+            messages.success(request, 'Thank you for your Appointment, We would get back to you with a response with 48 hours!')
             return redirect(reverse('products'))
         else:
             messages.error(request, ('Error in Form. '
              'Please ensure the form is valid.'))
     else:
-        form = ProductFeedbackForm()
+        form = BookingAppointmentForm()
 
-    template = 'products/feedback.html'
+    template = 'products/appointment.html'
     context = {
         'form': form,
     }

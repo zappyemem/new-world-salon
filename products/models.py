@@ -58,27 +58,17 @@ class ReturnProduct(models.Model):
         return self.name
 
 
-#product review modeL
 
+# Appointment Model
 
-class Review(models.Model):
-    text = models.TextField(max_length=254, blank=True)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
-    user = models.ForeignKey(User, blank=True, null=True, on_delete=models.SET_NULL)
-    created_at = models.DateTimeField(default=timezone.now)
-    
-    def __str__(self):
-        return self.text
-
-
-# Feedback/complaint Model
-
-class ProductFeedback(models.Model):
+class BookingAppointment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=254)
     email = models.CharField(max_length=254)
     subject = models.CharField(max_length=254, null=True, blank=True)
     detail = models.TextField(max_length=750)
+    appointment_date = models.DateField(default=timezone.now)
+
 
     def __str__(self):
         return self.name
