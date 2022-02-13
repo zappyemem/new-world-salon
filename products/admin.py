@@ -30,7 +30,7 @@ class ReturnProductAdmin(admin.ModelAdmin):
         )
 
 
-class ProductFeedbackForm(admin.ModelAdmin):
+class ProductFeedbackAdmin(admin.ModelAdmin):
     list_display = (
             'name',
             'subject',
