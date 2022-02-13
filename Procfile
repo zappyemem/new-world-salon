@@ -1,0 +1,1 @@
+web: gunicorn new_world_store.wsgi.application
