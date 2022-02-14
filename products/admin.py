@@ -15,6 +15,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('sku',)
 
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
@@ -24,19 +25,18 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class ReturnProductAdmin(admin.ModelAdmin):
     list_display = (
-            'name',
-            'id',
-            'return_reason',   
-        )
+        'name',
+        'id',
+        'return_reason',
+    )
 
 
 class ProductFeedbackAdmin(admin.ModelAdmin):
     list_display = (
-            'name',
-            'subject',
-            'detail',   
-        )
-
+        'name',
+        'subject',
+        'detail',
+    )
 
 
 admin.site.register(Product, ProductAdmin)
