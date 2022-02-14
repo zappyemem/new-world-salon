@@ -17,7 +17,7 @@ New World Store is a real-life project intended to be an e-commerce store for Ne
 
 ### ***Business Goals***
 
-*	Allow clients from the any location access to buy and product and increase our sales.
+*	Allow clients from the any location to buy any product and increase our sales.
 *	To eliminate restrictions of time, location, and distance through web sales globally which will in-turn increase the business turn over.
 *	Create a platform users can trust for safe and efficient transactions.
 *	Create a platform where our services and products can reach more people beyond our location.
@@ -28,7 +28,7 @@ New World Store is a real-life project intended to be an e-commerce store for Ne
 
 ### ***Persona***
 
-Ivonne lives in Oslo and loves to hair an hair extension to make her hair longer, she checks online or social media for salons with good reviews from customer experience and satisfaction. She discovers that new world salons have multiple 5 star review and wonders if she could buy quality extensions from New World Stores since she is miles away in Oslo from Stockholm. She checks online and discovers New World Salon Online store where she could have access to same quality products the Salon offers her clients and she visit the website.
+Ivonne lives in Oslo and want to have an hair extension to make her hair longer, she checks online or social media for salons with good reviews from customer experience and satisfaction. She discovers that new world salons have multiple 5 star review and wonders if she could buy quality extensions from New World Stores since she is miles away in Oslo from Stockholm. She checks online and discovers New World Salon Online store where she could have access to same quality products the Salon offers her clients and she visit the website.
 
 *	She visits the store online and discovers she can have same access to all products online.
 *	She can be registered safely as a user.
@@ -41,7 +41,7 @@ Ivonne lives in Oslo and loves to hair an hair extension to make her hair longer
 Anders is customer who comes to treat and fix his dreadlocs, he his planning to come for a dreadlock detox and reconstruction. Knowing detox products are always high in demand, he checks online:
 *	He goes online to buy the detox liquid.
 *	He logs in to his profile and books an appointment through our appointment integration.
-*   He avoids waste of time coming and no knowing if hair fix product is available.
+*   He avoids waste of time coming and not knowing if hair fix product is available.
 
 ### ***Color & Text***
 
