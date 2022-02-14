@@ -6,7 +6,7 @@ body {
     background: url('/media/homepic.jpg') no-repeat center center fixed;
     background-size: contain;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #336699;
     font-family: 'Lato';
 }
 
