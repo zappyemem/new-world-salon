@@ -102,13 +102,19 @@ A Model to arranged different products to different categories for easy sorting 
 
 ### ***Products***
 
+To provide customers with right to return a damage product, a product return model is available. Registered customers can log in to their profile page and select to return a product. The product id number and name are required, the customer details and information about what is the fault or damaged with the product are also required.
+
 <img src="static/img/product.png">
 
 ### ***Product Return***
 
+To provide customers with right to return a damage product, a product return model is available. Registered customers can log in to their profile page and select to return a product. The product id number and name are required, the customer details and  information about what is the fault or damaged with the product are also required.
+
 <img src="static/img/returnproduct.png">
 
 ### ***Feedback***
+
+Customer are provided the opportunity to complain or give positive feedback regarding all orders made on the platform. A form with information about the customer, date of order and feedback/complaint is provided to enable all user leave their comment.
 
 <img src="static/img/feedback.png">
 
