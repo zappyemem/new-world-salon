@@ -205,6 +205,34 @@ The Deployed App can be accessed on Heroku with the link Below:
 *	Password recovery is not yet implemented.
 *	Live chat help users with their orders.
 
+###  ***Credit***
+
+####  ***Media***
+
+All the images used in this project including the landing page were source from newworldsalons.store
+
+####  ***Acknowledgement***
+
+New World Store: is a pet project for the student (Emem)which Hope to continue to develop and deploy to real life use in the nearest future. During this project, I have used some educational materials and hereby acknowledge them:  
+
+
+*	Boutique Ado: Code Institute Dublin mock lecture project for Django Frame Works.
+*	https://www.youtube.com/watch?v=tJXt0HW0Id8
+*	https://www.youtube.com/watch?v=IVyc06bASSg
+*	https://www.youtube.com/watch?v=jmX27FrCqqs
+
+
+### ***Special Thanks***
+
+To Code Institute Student care and tutors for supporting me through this project, I would not have completed this programme without your guidance especially when I almost gave up due to the challenges that came with Covid-19.
+
+####   ***Contact***
+
+*  zappy4chat@yahoo.com
+
+
+
+
 
 
 
