@@ -44,6 +44,13 @@ body {
     border: 1px solid black;
 }
 
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -62,8 +69,8 @@ body {
     border: 1px solid black !important;
 }
 
-.reviewCard {
-    background-color: #17a2b8;
+.bg-black {
+    background: #000 !important;
 }
 
 
@@ -95,6 +102,10 @@ a.category-badge > span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
 }
 
 /* ------------------------------- bootstrap toasts */
